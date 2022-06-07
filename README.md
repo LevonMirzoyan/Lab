@@ -283,3 +283,223 @@ ACT
 ACG
 
 
+**ЗАДАНИЕ**2.1
+
+Given a collection of strings Dna and an integer d, a k-mer is a (k,d)-motif if it appears in every string from Dna with at most d mismatches. The following algorithm finds (k,d)-motifs.
+
+    MOTIFENUMERATION(Dna, k, d)
+        Patterns ← an empty set
+        for each k-mer Pattern in Dna
+            for each k-mer Pattern’ differing from Pattern by at most d
+              mismatches
+                if Pattern' appears in each string from Dna with at most d
+                mismatches
+                    add Pattern' to Patterns
+        remove duplicates from Patterns
+        return Patterns
+Implanted Motif Problem
+Implement MotifEnumeration (shown above) to find all (k, d)-motifs in a collection of strings.
+
+Given: Integers k and d, followed by a collection of strings Dna.
+
+Return: All (k, d)-motifs in Dna.
+
+**Sample Dataset**
+
+3 1
+
+ATTTGGC
+TGCCTTA
+CGGTATC
+GAAAATT
+
+**Sample Output**
+
+ATA ATT GTT TTT
+
+**ЗАДАНИЕ**2.6
+
+Given a collection of strings Dna and an integer d, a k-mer is a (k,d)-motif if it appears in every string from Dna with at most d mismatches. The following algorithm finds (k,d)-motifs.
+
+    MOTIFENUMERATION(Dna, k, d)
+        Patterns ← an empty set
+        for each k-mer Pattern in Dna
+            for each k-mer Pattern’ differing from Pattern by at most d
+              mismatches
+                if Pattern' appears in each string from Dna with at most d
+                mismatches
+                    add Pattern' to Patterns
+        remove duplicates from Patterns
+        return Patterns
+Implanted Motif Problem
+Implement MotifEnumeration (shown above) to find all (k, d)-motifs in a collection of strings.
+
+Given: Integers k and d, followed by a collection of strings Dna.
+
+Return: All (k, d)-motifs in Dna.
+
+**Sample Dataset**
+
+3 1
+ATTTGGC
+TGCCTTA
+CGGTATC
+GAAAATT
+
+**Sample Output**
+
+ATA ATT GTT TTT
+
+**ЗАДАНИЕ**3.1
+
+Given a string Text, its k-mer composition Compositionk(Text) is the collection of all k-mer substrings of Text (including repeated k-mers). For example,
+
+Composition3(TATGGGGTGC) = {ATG, GGG, GGG, GGT, GTG, TAT, TGC, TGG}
+Note that we have listed k-mers in lexicographic order (i.e., how they would appear in a dictionary) rather than in the order of their appearance in TATGGGGTGC. We have done this because the correct ordering of the reads is unknown when they are generated.
+
+String Composition Problem
+Generate the k-mer composition of a string.
+
+Given: An integer k and a string Text.
+
+Return: Compositionk(Text) (the k-mers can be provided in any order).
+
+**Sample Dataset**
+
+5
+CAATCCAAC
+
+**Sample Output**
+
+AATCC
+ATCCA
+CAATC
+CCAAC
+TCCAA
+
+**ЗАДАНИЕ**3.2
+
+String Spelled by a Genome Path Problem
+Find the string spelled by a genome path.
+
+Given: A sequence of k-mers Pattern1, ... , Patternn such that the last k - 1 symbols of Patterni are equal to the first k - 1 symbols of Patterni+1 for i from 1 to n-1.
+
+Return: A string Text of length k+n-1 where the i-th k-mer in Text is equal to Patterni for all i.
+
+**Sample Dataset**
+
+ACCGA
+CCGAA
+CGAAG
+GAAGC
+AAGCT
+
+**Sample Output**
+
+ACCGAAGCT
+
+**ЗАДАНИЕ**3.3
+
+String Spelled by a Genome Path Problem
+Find the string spelled by a genome path.
+
+Given: A sequence of k-mers Pattern1, ... , Patternn such that the last k - 1 symbols of Patterni are equal to the first k - 1 symbols of Patterni+1 for i from 1 to n-1.
+
+Return: A string Text of length k+n-1 where the i-th k-mer in Text is equal to Patterni for all i.
+
+**Sample Dataset**
+
+ACCGA
+CCGAA
+CGAAG
+GAAGC
+AAGCT
+
+**Sample Output**
+
+ACCGAAGCT
+
+**ЗАДАНИЕ**3.4
+
+String Spelled by a Genome Path Problem
+Find the string spelled by a genome path.
+
+Given: A sequence of k-mers Pattern1, ... , Patternn such that the last k - 1 symbols of Patterni are equal to the first k - 1 symbols of Patterni+1 for i from 1 to n-1.
+
+Return: A string Text of length k+n-1 where the i-th k-mer in Text is equal to Patterni for all i.
+
+**Sample Dataset**
+
+ACCGA
+CCGAA
+CGAAG
+GAAGC
+AAGCT
+
+**Sample Output**
+
+ACCGAAGCT
+
+**ЗАДАНИЕ**3.5
+
+Given an arbitrary collection of k-mers Patterns (where some k-mers may appear multiple times), we define CompositionGraph(Patterns) as a graph with |Patterns| isolated edges. Every edge is labeled by a k-mer from Patterns, and the starting and ending nodes of an edge are labeled by the prefix and suffix of the k-mer labeling that edge. We then define the de Bruijn graph of Patterns, denoted DeBruijn(Patterns), by gluing identically labeled nodes in CompositionGraph(Patterns), which yields the following algorithm.
+
+    DEBRUIJN(Patterns)
+        represent every k-mer in Patterns as an isolated edge between its prefix and suffix
+        glue all nodes with identical labels, yielding the graph DeBruijn(Patterns)
+        return DeBruijn(Patterns)
+De Bruijn Graph from k-mers Problem
+Construct the de Bruijn graph from a collection of k-mers.
+
+Given: A collection of k-mers Patterns.
+
+Return: The de Bruijn graph DeBruijn(Patterns), in the form of an adjacency list.
+
+**Sample Dataset**
+
+GAGG
+CAGG
+GGGG
+GGGA
+CAGG
+AGGG
+GGAG
+
+**Sample Output**
+
+AGG -> GGG
+CAG -> AGG,AGG
+GAG -> AGG
+GGA -> GAG
+GGG -> GGA,GGG
+
+**ЗАДАНИЕ**3.8
+
+String Reconstruction Problem
+Reconstruct a string from its k-mer composition.
+
+Given: An integer k followed by a list of k-mers Patterns.
+
+Return: A string Text with k-mer composition equal to Patterns. (If multiple answers exist, you may return any one.)
+
+**Sample Dataset**
+
+4
+CTTA
+ACCA
+TACC
+GGCT
+GCTT
+TTAC
+
+**Sample Output**
+
+GGCTTACCA
+
+
+
+
+
+
+
+
