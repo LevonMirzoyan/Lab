@@ -1,6 +1,7 @@
 Лабораторные работы с сайта ROSALIND (биоинформатика)
 
-1.1
+**ЗАДАНИЕ**1.1
+
 This is the first problem in a collection of "code challenges" to accompany Bioinformatics Algorithms: An Active-Learning Approach by Phillip Compeau & Pavel Pevzner.
 
 A k-mer is a string of length k. We define Count(Text, Pattern) as the number of times that a k-mer Pattern appears as a substring of Text. For example,
@@ -31,7 +32,7 @@ GCG
 
 2        
 
-1.2
+**ЗАДАНИЕ**1.2
 
 We say that Pattern is a most frequent k-mer in Text if it maximizes Count(Text, Pattern) among all k-mers. For example, "ACTAT" is a most frequent 5-mer in "ACAACTATGCATCACTATCGGGAACTATCCT", and "ATA" is a most frequent 3-mer of "CGATATATCCATAG".
 
@@ -51,7 +52,7 @@ ACGTTGCATGTCGCATGATGCATGAGAGCT
 
 CATG GCAT
 
-1.3
+**ЗАДАНИЕ**1.3
 
 In DNA strings, symbols 'A' and 'T' are complements of each other, as are 'C' and 'G'. Given a nucleotide p, we denote its complementary nucleotide as p. The reverse complement of a DNA string Pattern = p1…pn is the string Pattern = pn … p1 formed by taking the complement of each nucleotide in Pattern, then reversing the resulting string.
 
@@ -72,7 +73,7 @@ AAAACCCGGT
 
 ACCGGGTTTT
 
-1.4
+**ЗАДАНИЕ**1.4
 
 In this problem, we ask a simple question: how many times can one string occur as a substring of another? Recall from “Find the Most Frequent Words in a String” that different occurrences of a substring can overlap with each other. For example, ATA occurs three times in CGATATATCCATAG.
 
@@ -92,7 +93,7 @@ GATATATGCATATACTT
 
 1 3 9
 
-1.5
+**ЗАДАНИЕ**1.5
 
 Given integers L and t, a string Pattern forms an (L, t)-clump inside a (larger) string Genome if there is an interval of Genome of length L in which Pattern appears at least t times. For example, TGCA forms a (25,3)-clump in the following Genome: gatcagcataagggtcccTGCAATGCATGACAAGCCTGCAgttgttttac.
 
@@ -112,7 +113,7 @@ CGGACTCGACAGATGTGAAGAAATGTGAAGACTGAGTGAAGAGAAGAGGAAACACGACACGACATTGCGACATAATGTAC
 
 CGACA GAAGA AATGT
 
-1.6
+**ЗАДАНИЕ**1.6
 
 Given integers L and t, a string Pattern forms an (L, t)-clump inside a (larger) string Genome if there is an interval of Genome of length L in which Pattern appears at least t times. For example, TGCA forms a (25,3)-clump in the following Genome: gatcagcataagggtcccTGCAATGCATGACAAGCCTGCAgttgttttac.
 
@@ -132,7 +133,7 @@ CGGACTCGACAGATGTGAAGAAATGTGAAGACTGAGTGAAGAGAAGAGGAAACACGACACGACATTGCGACATAATGTAC
 
 CGACA GAAGA AATGT
 
-1.7
+**ЗАДАНИЕ**1.7
 
 We say that position i in k-mers p1 … pk and q1 … qk is a mismatch if pi ≠ qi. For example, CGAAT and CGGAC have two mismatches. The number of mismatches between strings p and q is called the Hamming distance between these strings and is denoted HammingDistance(p, q).
 
@@ -152,7 +153,7 @@ GGACCGTTGAC
 
 3
 
-1.8
+**ЗАДАНИЕ**1.8
 
 We say that a k-mer Pattern appears as a substring of Text with at most d mismatches if there is some k-mer substring Pattern' of Text having d or fewer mismatches with Pattern, i.e., HammingDistance(Pattern, Pattern') ≤ d. Our observation that a DnaA box may appear with slight variations leads to the following generalization of the Pattern Matching Problem.
 
@@ -173,7 +174,7 @@ CGCCCGAATCCAGAACGCATTCCCATATTTCGGGACCACTGGCCTCCACGGTACGGACGTCAATCAAATGCCTAGCGGCT
 
 6 7 26 27 78
 
-1.9
+**ЗАДАНИЕ**1.9
 
 We defined a mismatch in “Compute the Hamming Distance Between Two Strings”. We now generalize “Find the Most Frequent Words in a String” to incorporate mismatches as well.
 
@@ -197,7 +198,7 @@ ACGTTGCATGTCGCATGATGCATGAGAGCT
 
 GATG ATGC ATGT
 
-1.10
+**ЗАДАНИЕ**1.10
 
 We now extend “Find the Most Frequent Words with Mismatches in a String” to find frequent words with both mismatches and reverse complements. Recall that Pattern refers to the reverse complement of Pattern.
 
@@ -217,7 +218,7 @@ ACGTTGCATGTCGCATGATGCATGAGAGCT
 
 ATGT ACAT
 
-1.12
+**ЗАДАНИЕ**1.12
 
 Implement PatternToNumber
 Convert a DNA string to a number.
@@ -234,7 +235,7 @@ AGT
 
 11
 
-1.13
+**ЗАДАНИЕ**1.13
 
 Implement NumberToPattern
 Convert an integer to its corresponding DNA string.
@@ -252,7 +253,7 @@ Return: NumberToPattern(index, k).
 
 AGTC
 
-1.14
+**ЗАДАНИЕ**1.14
 
 The d-neighborhood Neighbors(Pattern, d) is the set of all k-mers whose Hamming distance from Pattern does not exceed d.
 
