@@ -23,9 +23,12 @@ Given: {DNA strings}} Text and Pattern.
 Return: Count(Text, Pattern).
 
 Sample Dataset
+
 GCGCG
 GCG
+
 Sample Output
+
 2        
 
 1.2
@@ -40,9 +43,12 @@ Given: A DNA string Text and an integer k.
 Return: All most frequent k-mers in Text (in any order).
 
 Sample Dataset
+
 ACGTTGCATGTCGCATGATGCATGAGAGCT
 4
+
 Sample Output
+
 CATG GCAT
 
 1.3
@@ -59,8 +65,11 @@ Given: A DNA string Pattern.
 Return: Pattern, the reverse complement of Pattern.
 
 Sample Dataset
+
 AAAACCCGGT
+
 Sample Output
+
 ACCGGGTTTT
 
 1.4
@@ -75,9 +84,12 @@ Given: Strings Pattern and Genome.
 Return: All starting positions in Genome where Pattern appears as a substring. Use 0-based indexing.
 
 Sample Dataset
+
 ATAT
 GATATATGCATATACTT
+
 Sample Output
+
 1 3 9
 
 1.5
@@ -92,9 +104,12 @@ Given: A string Genome, and integers k, L, and t.
 Return: All distinct k-mers forming (L, t)-clumps in Genome.
 
 Sample Dataset
+
 CGGACTCGACAGATGTGAAGAAATGTGAAGACTGAGTGAAGAGAAGAGGAAACACGACACGACATTGCGACATAATGTACGAATGTAATGTGCCTATGGC
 5 75 4
+
 Sample Output
+
 CGACA GAAGA AATGT
 
 1.6
@@ -109,9 +124,12 @@ Given: A string Genome, and integers k, L, and t.
 Return: All distinct k-mers forming (L, t)-clumps in Genome.
 
 Sample Dataset
+
 CGGACTCGACAGATGTGAAGAAATGTGAAGACTGAGTGAAGAGAAGAGGAAACACGACACGACATTGCGACATAATGTACGAATGTAATGTGCCTATGGC
 5 75 4
+
 Sample Output
+
 CGACA GAAGA AATGT
 
 1.7
@@ -126,9 +144,12 @@ Given: Two DNA strings.
 Return: An integer value representing the Hamming distance.
 
 Sample Dataset
+
 GGGCCGTTGGT
 GGACCGTTGAC
+
 Sample Output
+
 3
 
 1.8
@@ -147,7 +168,9 @@ Sample Dataset
 ATTCTGGA
 CGCCCGAATCCAGAACGCATTCCCATATTTCGGGACCACTGGCCTCCACGGTACGGACGTCAATCAAATGCCTAGCGGCTTGTGGTTTCTCCTACGCTCC
 3
+
 Sample Output
+
 6 7 26 27 78
 
 1.9
@@ -186,9 +209,12 @@ Given: A DNA string Text as well as integers k and d.
 Return: All k-mers Pattern maximizing the sum Countd(Text, Pattern) + Countd(Text, Pattern) over all possible k-mers.
 
 Sample Dataset
+
 ACGTTGCATGTCGCATGATGCATGAGAGCT
 4 1
+
 Sample Output
+
 ATGT ACAT
 
 1.12
@@ -226,6 +252,33 @@ Sample Output
 
 AGTC
 
+1.14
 
+The d-neighborhood Neighbors(Pattern, d) is the set of all k-mers whose Hamming distance from Pattern does not exceed d.
+
+Generate the d-Neighborhood of a String
+Find all the neighbors of a pattern.
+
+Given: A DNA string Pattern and an integer d.
+
+Return: The collection of strings Neighbors(Pattern, d).
+
+Sample Dataset
+
+ACG
+1
+
+Sample Output
+
+CCG
+TCG
+GCG
+AAG
+ATG
+AGG
+ACA
+ACC
+ACT
+ACG
 
 
