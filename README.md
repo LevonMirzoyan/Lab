@@ -22,12 +22,12 @@ Given: {DNA strings}} Text and Pattern.
 
 Return: Count(Text, Pattern).
 
-Sample Dataset
+**Sample Dataset**
 
 GCGCG
 GCG
 
-Sample Output
+**Sample Output**
 
 2        
 
@@ -42,12 +42,12 @@ Given: A DNA string Text and an integer k.
 
 Return: All most frequent k-mers in Text (in any order).
 
-Sample Dataset
+**Sample Dataset**
 
 ACGTTGCATGTCGCATGATGCATGAGAGCT
 4
 
-Sample Output
+**Sample Output**
 
 CATG GCAT
 
@@ -64,11 +64,11 @@ Given: A DNA string Pattern.
 
 Return: Pattern, the reverse complement of Pattern.
 
-Sample Dataset
+**Sample Dataset**
 
 AAAACCCGGT
 
-Sample Output
+**Sample Output**
 
 ACCGGGTTTT
 
@@ -83,12 +83,12 @@ Given: Strings Pattern and Genome.
 
 Return: All starting positions in Genome where Pattern appears as a substring. Use 0-based indexing.
 
-Sample Dataset
+**Sample Dataset**
 
 ATAT
 GATATATGCATATACTT
 
-Sample Output
+**Sample Output**
 
 1 3 9
 
@@ -103,12 +103,12 @@ Given: A string Genome, and integers k, L, and t.
 
 Return: All distinct k-mers forming (L, t)-clumps in Genome.
 
-Sample Dataset
+**Sample Dataset**
 
 CGGACTCGACAGATGTGAAGAAATGTGAAGACTGAGTGAAGAGAAGAGGAAACACGACACGACATTGCGACATAATGTACGAATGTAATGTGCCTATGGC
 5 75 4
 
-Sample Output
+**Sample Output**
 
 CGACA GAAGA AATGT
 
@@ -123,12 +123,12 @@ Given: A string Genome, and integers k, L, and t.
 
 Return: All distinct k-mers forming (L, t)-clumps in Genome.
 
-Sample Dataset
+**Sample Dataset**
 
 CGGACTCGACAGATGTGAAGAAATGTGAAGACTGAGTGAAGAGAAGAGGAAACACGACACGACATTGCGACATAATGTACGAATGTAATGTGCCTATGGC
 5 75 4
 
-Sample Output
+**Sample Output**
 
 CGACA GAAGA AATGT
 
@@ -143,12 +143,12 @@ Given: Two DNA strings.
 
 Return: An integer value representing the Hamming distance.
 
-Sample Dataset
+**Sample Dataset**
 
 GGGCCGTTGGT
 GGACCGTTGAC
 
-Sample Output
+**Sample Output**
 
 3
 
@@ -163,13 +163,13 @@ Given: Strings Pattern and Text along with an integer d.
 
 Return: All starting positions where Pattern appears as a substring of Text with at most d mismatches.
 
-Sample Dataset
+**Sample Dataset**
 
 ATTCTGGA
 CGCCCGAATCCAGAACGCATTCCCATATTTCGGGACCACTGGCCTCCACGGTACGGACGTCAATCAAATGCCTAGCGGCTTGTGGTTTCTCCTACGCTCC
 3
 
-Sample Output
+**Sample Output**
 
 6 7 26 27 78
 
@@ -188,12 +188,12 @@ Given: A string Text as well as integers k and d.
 
 Return: All most frequent k-mers with up to d mismatches in Text.
 
-Sample Dataset
+**Sample Dataset**
 
 ACGTTGCATGTCGCATGATGCATGAGAGCT
 4 1
 
-Sample Output
+**Sample Output**
 
 GATG ATGC ATGT
 
@@ -208,12 +208,12 @@ Given: A DNA string Text as well as integers k and d.
 
 Return: All k-mers Pattern maximizing the sum Countd(Text, Pattern) + Countd(Text, Pattern) over all possible k-mers.
 
-Sample Dataset
+**Sample Dataset**
 
 ACGTTGCATGTCGCATGATGCATGAGAGCT
 4 1
 
-Sample Output
+**Sample Output**
 
 ATGT ACAT
 
@@ -226,11 +226,11 @@ Given: A DNA string Pattern.
 
 Return: PatternToNumber(Pattern).
 
-Sample Dataset
+**Sample Dataset**
 
 AGT
 
-Sample Output
+**Sample Output**
 
 11
 
@@ -243,12 +243,12 @@ Given: Integers index and k.
 
 Return: NumberToPattern(index, k).
 
-Sample Dataset
+**Sample Dataset**
 
 45
 4
 
-Sample Output
+**Sample Output**
 
 AGTC
 
@@ -263,12 +263,12 @@ Given: A DNA string Pattern and an integer d.
 
 Return: The collection of strings Neighbors(Pattern, d).
 
-Sample Dataset
+**Sample Dataset**
 
 ACG
 1
 
-Sample Output
+**Sample Output**
 
 CCG
 TCG
