@@ -63,7 +63,7 @@ Find the reverse complement of a DNA string.
 
 Given: A DNA string Pattern.
 
-Return: Pattern, the reverse complement of Pattern.
+Return: Pattern, the reverse complement of Pattern. 
 
 **Sample Dataset**
 
